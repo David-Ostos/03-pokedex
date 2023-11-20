@@ -18,6 +18,13 @@ async function bootstrap () {
   );
 
   app.setGlobalPrefix('api/v1');
+  app.enableCors({
+    origin: true,
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    allowedHeaders: 'Content-Type,Authorization,X-Requested-With,Accept-Language',
+    optionsSuccessStatus: 204,
+    credentials: true
+  });
 
   const server = await app.listen(process.env.PORT);
 
