@@ -4,30 +4,28 @@
 
 # Ejecutar en Desarrollo
 
-### 1. Clonar el repositorio
+1. Clonar el repositorio
 
-### 2. Ejecutar
-```
+2. Ejecutar
+```bash
 npm i
 ```
 
-### 3. Tener Nest CLI instalado
-```
+3. Tener Nest CLI instalado
+```bash
 npm i -g @nestjs/cli
 ```
 
-### 4. Levantar la base de datos
-```
+4. Levantar la base de datos
+```bash
 docker compose up -d
 ```
-### 5. Reconstruir la base de datos con semillas
 
-```
-GET http://localhost:3000/api/v1/seed
-```
+5. Clonar el archivo __.env.example__ y renombrar la copia a __.env__
 
-### 6. Correr app
+6. Llenar las variables de entorno definidas en el __.env__
 
+7. Correr app
 ```bash
 # modo desarrollo
 $ npm run start
@@ -38,6 +36,12 @@ $ npm run start:dev
 # Modo de produccion
 $ npm run start:prod
 ```
+
+8. Reconstruir la base de datos con semillas
+```http
+GET http://localhost:3000/api/v1/seed
+```
+
 
 ## Stack usado
 
