@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "npm start:prod",
+  "buildCommand": "npm start",
   "installCommand": "npm install",
   "builds": [
     {
