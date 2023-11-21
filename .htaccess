@@ -1,1 +1,2 @@
 PassengerNodejs ./app.js
+PassengerFriendlyErrorPages on
