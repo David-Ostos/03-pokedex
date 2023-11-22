@@ -22,7 +22,7 @@ export class PokemonService {
 
   ) {
     this.defaultLimit = configService.getOrThrow<number>('defaultLimit');
-    console.log({ defaultLimit: configService.getOrThrow<number>('defaultLimit') });
+    // console.log({ defaultLimit: configService.getOrThrow<number>('defaultLimit') });
   }
 
   async create (createPokemonDto: CreatePokemonDto) {

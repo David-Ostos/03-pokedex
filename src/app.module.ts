@@ -36,7 +36,7 @@ export class AppModule {
 
   // eslint-disable-next-line @typescript-eslint/no-useless-constructor
   constructor () {
-    console.log(process.env.MONGODB);
+
     // console.log( process.env );
   }
 }
