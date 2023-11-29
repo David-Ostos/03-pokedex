@@ -38,3 +38,4 @@ lerna-debug.log*
 .env.prod
 /pokedex
 .vercel
+# docker pull node:20-alpine3.18
