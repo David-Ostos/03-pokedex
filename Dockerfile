@@ -8,7 +8,7 @@ RUN npm ci
 
 # Build the app with cache dependencies
 FROM node:20-alpine3.18 AS builder
-WORKDIR /app
+WORKDIR /app 
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 RUN npm run build
