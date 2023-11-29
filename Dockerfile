@@ -20,7 +20,7 @@ FROM node:20-alpine3.18 AS runner
 # Set working directory
 WORKDIR /usr/src/app
 
-COPY package.json package-lock.json ./
+COPY package.json package-lock.json /public/* ./
 # yarn.lock ./
 
 RUN npm install --prod
