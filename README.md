@@ -48,7 +48,16 @@ GET http://localhost:3000/api/v1/seed
 * MongoDB
 * Nest
 
-## Test
+## Produccion Build
+
+1. Crear el archivo ```.env.prod```
+2. Llenar las variables de entorno de prod
+3. Crear la nueva imagen 
+```bash
+docker compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
+<!-- ## Test
 
 ```bash
 # unit tests
@@ -59,7 +68,7 @@ $ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
-```
+``` -->
 
 ## Mantente en contacto
 
